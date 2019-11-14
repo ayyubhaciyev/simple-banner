@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#umumi {
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#yol {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("img/way.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+}
+#car1 {
+  position: absolute;
+  bottom: -20px;
+  right: -420px;
+  background-image: url("img/car1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 420px;
+  z-index: 2;
+  animation-name: car1;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+#car2 {
+    position: absolute;
+    bottom: -20px;
+    left: -420px;
+    background-image: url("img/car2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 260px;
+    width: 420px;
+    z-index: 3;
+    animation-name: car2;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+  }
+
+  #logo {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-image: url("img/logo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    z-index: 3;
+    animation-name: logo;
+    animation-delay: 2s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+  }
+@keyframes car1 {
+    from {right: -420px;}
+    to {right: 100%;}
+  }
+
+  @keyframes car2 {
+    from {left: -420px;}
+    to {left: 100%;}
+  }
+
+  @keyframes logo {
+    from {top: -100px;}
+    to {top: 70px;}
+  }
